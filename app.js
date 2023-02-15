@@ -19,7 +19,7 @@ let userid = document.createElement('p'); //создаем еще парагра
 userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
 usercard.appendChild(userid); //добавляем
 
-p.innerText = `	${tg.initDataUnsafe.user.first_name}
+userid.innerText = `	${tg.initDataUnsafe.user.first_name}
 		${tg.initDataUnsafe.user.last_name}
 		${tg.initDataUnsafe.user.username}
 		${tg.initDataUnsafe.user.id }	`;
