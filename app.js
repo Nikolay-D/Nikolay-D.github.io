@@ -107,6 +107,7 @@ tg.onEvent("mainButtonClicked", function(){
 
 tg.MainButton.onClick(function(){
     	tg.sendData(JSON.stringify(111));
+	tg.answerWebAppQuery(555);
 	tg.MainButton.setText("Нажато!");
   })
 
