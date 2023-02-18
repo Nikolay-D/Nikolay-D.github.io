@@ -101,9 +101,13 @@ btn6.addEventListener("click", function(){
 });
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+tg.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
 });
+
+tg.MainButton.onClick(function(){
+    tg.sendData(JSON.stringify(111));
+  })
 
 
 
