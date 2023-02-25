@@ -52,8 +52,13 @@ btn2.addEventListener("click", function(){
 	}
 });
 
-tg.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+tg.onEvent("mainButtonClicked", function(item){
+	var data = {
+            'method': 'sendCommand',
+            'command_name': command_name
+        };
+        var encoded_data = JSON.stringify(data);
+	tg.sendData(encoded_data);
 });
 
 tg.MainButton.onClick(function(){
