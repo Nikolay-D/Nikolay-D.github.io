@@ -41,15 +41,13 @@ btn1.addEventListener("click", function(){
 });
 
 btn2.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
-		tg.MainButton.setText("Вы выбрали товар 2!");
-		item = "2";
-		tg.sendData(item);
-		tg.MainButton.show();
-	}
+	var data = {
+            'method': 'sendCommand',
+            'command_name': '333'
+        };
+        var encoded_data = JSON.stringify(data);
+	tg.sendData(encoded_data);
+
 });
 
 tg.onEvent("mainButtonClicked", function(item){
