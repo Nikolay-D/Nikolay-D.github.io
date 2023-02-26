@@ -55,6 +55,8 @@ tg.MainButton.onClick(function(){
 	tg.MainButton.setText("Нажато!  1");
     	tg.sendData(JSON.stringify(111));
 	tg.MainButton.setText("Нажато!  2");
-	tg.answerWebAppQuery(555);
+	tg.sendData(111);
 	tg.MainButton.setText("Нажато!  3");
+	tg.answerWebAppQuery(555);
+	tg.MainButton.setText("Нажато!  4");
   })
