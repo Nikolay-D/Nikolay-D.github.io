@@ -57,15 +57,15 @@ tg.MainButton.onClick(function(){
 	    counter: 1,
 	}
 	const data = {
-	    data: 'counter',
-	    button_text: 1,
+	    data: 'assa',
+	    button_text: 145,
 	}
 	tg.MainButton.setText("Нажато!  1");
     	tg.sendData(JSON.stringify(111));
 	tg.MainButton.setText("Нажато!  2");
-	tg.sendData(data);
+	tg.sendData(JSON.stringify(data));
 	tg.MainButton.setText("Нажато!  3");
-	tg.sendData(data3);
+	tg.sendData(JSON.stringify(data3));
 	tg.MainButton.setText("Нажато!  4");
 	tg.answerWebAppQuery(555);
 	tg.MainButton.setText("Нажато!  5");
